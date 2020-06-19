@@ -29,6 +29,8 @@ import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.onNavDestinationSelected
+import androidx.navigation.ui.setupWithNavController
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.navigation.NavigationView
 
 /**
@@ -80,10 +82,11 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setupBottomNavMenu(navController: NavController) {
-        // TODO STEP 9.3 - Use NavigationUI to set up Bottom Nav
-//        val bottomNav = findViewById<BottomNavigationView>(R.id.bottom_nav_view)
-//        bottomNav?.setupWithNavController(navController)
-        // TODO END STEP 9.3
+        // Completed STEP 9.3 - Use NavigationUI to set up Bottom Nav
+        // Find the Bottom Navigation View
+        val bottomNav = findViewById<BottomNavigationView>(R.id.bottom_nav_view)
+        // Delegate to NavigationUI to setup
+        bottomNav?.setupWithNavController(navController)
     }
 
     private fun setupNavigationMenu(navController: NavController) {
