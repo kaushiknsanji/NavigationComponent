@@ -10,12 +10,11 @@
   ~ See the License for the specific language governing permissions and
   ~ limitations under the License.
   -->
-<menu>
-    <!-- TODO Step 9.1 - Add an item for the settings fragment -->
-    <!--<item-->
-    <!--android:id="@+id/settings_dest"-->
-    <!--android:icon="@drawable/ic_settings"-->
-    <!--android:menuCategory="secondary"-->
-    <!--android:title="@string/settings" />-->
-    <!-- TODO END STEP 9.1 -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Completed Step 9.1 - Add an item for the settings fragment -->
+    <item
+        android:id="@+id/settings_dest"
+        android:icon="@drawable/ic_settings"
+        android:menuCategory="secondary"
+        android:title="@string/settings" />
 </menu>
