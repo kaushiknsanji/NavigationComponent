@@ -82,4 +82,11 @@
         <deepLink app:uri="www.example.com/{myarg}" />
     </fragment>
 
+    <!-- Completed STEP 12.2 - Create a new navigation destination pointing to ShoppingCartFragment -->
+    <fragment
+        android:id="@+id/shopping_cart_dest"
+        android:name="com.example.android.codelabs.navigation.ShoppingCartFragment"
+        android:label="@string/shopping_cart"
+        tools:layout="@layout/fragment_shopping_cart" />
+
 </navigation>

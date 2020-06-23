@@ -2,8 +2,10 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    <!-- Completed STEP 12.3 - Rename Menu item Id to match with the destination Id
+    of ShoppingCartFragment in the Navigation Graph -->
     <item
-        android:id="@+id/shopping_cart"
+        android:id="@+id/shopping_cart_dest"
         android:icon="@drawable/ic_shopping_cart_white"
         android:title="@string/shopping_cart"
         app:showAsAction="ifRoom" />
