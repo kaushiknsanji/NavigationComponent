@@ -1,23 +1,41 @@
-# Android Navigation codelab
+# Navigation Component
 
-Content: https://codelabs.developers.google.com/codelabs/android-navigation/
+App built by following the instructions detailed in the Google Codelab [Jetpack Navigation][Jetpack Navigation Codelab]. Original code by Google for this codelab can be referred [here][Jetpack Navigation Repository].
 
-License
--------
+## What one will learn
 
-Copyright 2018 The Android Open Source Project, Inc.
+* Navigation Graph Structure
+* NavHostFragment and NavController
+* Navigating to specific destinations
+* Navigating by action
+* Navigating with Animated transitions when navigating via actions in the Navigation Graph, and also through NavOptions when navigating to specific destinations
+* Passing arguments between destinations, including accessing them via the new SafeArgs plugin
+* Navigating using menus, bottom navigation, side navigation and navigation drawers
+* Navigating to Deep linked destination from App widgets, Notifications, and Web link
 
-Licensed to the Apache Software Foundation (ASF) under one or more contributor
-license agreements.  See the NOTICE file distributed with this work for
-additional information regarding copyright ownership.  The ASF licenses this
-file to you under the Apache License, Version 2.0 (the "License"); you may not
-use this file except in compliance with the License.  You may obtain a copy of
-the License at
+## What is not taught (as of June 2020)
 
-http://www.apache.org/licenses/LICENSE-2.0
+Advanced stuff like:
+* Popping destinations off the backstack (or any backstack manipulations)
+* Nested navigation graphs
+* Conditional navigation
+* Use of Navigation Extras for shared element transitions
+* Global actions
 
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
-WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  See the
-License for the specific language governing permissions and limitations under
-the License.
+## Getting Started
+
+* Android Studio 3.3 or higher.
+* Basic familiarity with App Widgets and Notifications.
+* Familiarity with navigation using traditional approaches in order to compare and understand the benefits of using Navigation component.
+
+### Branches in this Repository
+
+* **[starter-code-kotlin](https://github.com/kaushiknsanji/NavigationComponent/tree/starter-code-kotlin)**
+	* This is the Starter code for the [codelab][Jetpack Navigation Codelab].
+* **[master](https://github.com/kaushiknsanji/NavigationComponent)**
+	* This contains the Solution for the [codelab][Jetpack Navigation Codelab].
+  * In comparison with the original [repository][Jetpack Navigation Repository], this repository contains additional modifications and corrections. Lookup for the commits with comments that do not have "**TODO**" in them.
+
+<!-- Reference Style Links are to be placed after this -->
+[Jetpack Navigation Codelab]: https://codelabs.developers.google.com/codelabs/android-navigation/
+[Jetpack Navigation Repository]: https://github.com/googlecodelabs/android-navigation
