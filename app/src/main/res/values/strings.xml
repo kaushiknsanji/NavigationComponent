@@ -30,4 +30,9 @@
     <string name="next_step_button">Navigate next step</string>
     <string name="finish_button">Finish Flow</string>
     <string name="send_deep_link_notification_button">Send deep link notification</string>
+
+    <!-- Notification Strings -->
+    <string name="deep_link_notification_channel_name">Deep Links</string>
+    <string name="title_deep_link_notification_content">Navigation</string>
+    <string name="text_deep_link_notification_content">Deep link to Android</string>
 </resources>
