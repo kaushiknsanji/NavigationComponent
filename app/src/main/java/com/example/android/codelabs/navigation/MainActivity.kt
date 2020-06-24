@@ -70,12 +70,18 @@ class MainActivity : AppCompatActivity() {
             val dest: String = try {
                 resources.getResourceName(destination.id)
             } catch (e: Resources.NotFoundException) {
-                Integer.toString(destination.id)
+                destination.id.toString()
             }
 
             Toast.makeText(this@MainActivity, "Navigated to $dest",
                     Toast.LENGTH_SHORT).show()
             Log.d("NavigationActivity", "Navigated to $dest")
+
+            // Hide the Settings MenuItem if the current destination shown is SettingsFragment
+            if (destination.id == R.id.settings_dest) {
+                // Invalidate menu to rebuild
+                invalidateOptionsMenu()
+            }
         }
     }
 
@@ -111,6 +117,16 @@ class MainActivity : AppCompatActivity() {
         // navigation items to the menu here if there isn't a NavigationView
         if (navigationView == null) {
             menuInflater.inflate(R.menu.overflow_menu, menu)
+
+            // Hide the Settings MenuItem if the current destination shown is SettingsFragment
+            if (findNavController(R.id.my_nav_host_fragment).currentDestination?.id == R.id.settings_dest) {
+                menu.findItem(R.id.settings_dest)?.let { menuItem: MenuItem ->
+                    // Hide the Menu Item and make it disabled
+                    menuItem.isVisible = false
+                    menuItem.isEnabled = false
+                }
+            }
+
             return true
         }
         return retValue
